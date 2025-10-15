@@ -1,0 +1,144 @@
+.file-upload {
+    position: relative; /* For absolute positioning of input */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #d2d6dc;
+    border-radius: 8px;
+    padding: 12px; /* Increased padding for breathing room */
+    margin-bottom: 30px; /* More space below */
+    background-color: #f7fafc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  }
+  
+  .file-upload input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1; /* Ensure it's clickable */
+  }
+  
+  .file-upload label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden; /* Prevent text overflow */
+    border-radius: 8px; /* Rounded for modern look */
+  }
+  
+  .file-upload .choose-btn {
+    background-color: #e9d8fd;
+    color: #6b46c1;
+    padding: 10px 20px; /* Larger for better touch */
+    border-radius: 8px 0 0 8px;
+    font-weight: 500;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle button shadow */
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .file-upload .choose-btn:hover {
+    background-color: #d6bcfa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  .file-upload .file-name {
+    flex: 1;
+    padding: 10px 20px;
+    border-left: 1px solid #d2d6dc;
+    color: #a0aec0;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Truncate long names cleanly */
+    background-color: white; /* For better contrast */
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .review-btn {
+    background: linear-gradient(to right, #4299e1, #3182ce); /* Blue gradient as in your screenshot */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 9999px; /* Pill shape */
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    margin-top: 10px; /* Space from upload area */
+  }
+  
+  .review-btn::before {
+    content: '↑'; /* Unicode upload arrow icon */
+    font-size: 1.2rem;
+  }
+  
+  .review-btn:hover {
+    background: linear-gradient(to right, #2b6cb0, #2c5282); /* Darker on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .logout-button {
+    background: linear-gradient(to right, #e53e3e, #c53030); /* Red gradient for logout */
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Smaller padding than review button */
+    border-radius: 9999px; /* Pill shape */
+    font-weight: 500; /* Slightly lighter font weight */
+    font-size: 0.875rem; /* Smaller font size */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px; /* Space from history section */
+  }
+  
+  .logout-button:hover {
+    background: linear-gradient(to right, #c53030, #9c2626); /* Darker red on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .auth-links {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: #718096;
+    text-align: center; /* Center for cleanliness */
+  }
+  
+  .history-section {
+    text-align: left;
+    margin-top: 40px;
+  }
+  
+  .history-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .history-section li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .review-display {
+    text-align: left;
+    margin-top: 20px;
+    background-color: #f7fafc;
+    padding: 20px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  }

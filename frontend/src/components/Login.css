@@ -1,0 +1,44 @@
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between elements */
+  }
+  
+  .auth-form input {
+    padding: 12px 16px;
+    border: 1px solid #d2d6dc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f7fafc;
+    transition: border-color 0.2s;
+  }
+  
+  .auth-form input:focus {
+    border-color: #4299e1;
+    outline: none;
+  }
+  
+  .auth-form button {
+    background: linear-gradient(to right, #4299e1, #3182ce); /* Matching dashboard button */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 9999px; /* Pill shape */
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-form button:hover {
+    background: linear-gradient(to right, #2b6cb0, #2c5282);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .auth-link {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: #718096;
+    text-align: center;
+  }
