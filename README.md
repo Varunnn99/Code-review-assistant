@@ -164,7 +164,7 @@ npm start
 
 ## 🎥 Demo
 
-[Link to demo video] - Upload to YouTube or similar platform
+https://drive.google.com/file/d/17NyPKRS24G9OETwGn-zF6LOdt29f5qT0/view?usp=sharing
 
 ## 📝 Development Notes
 
