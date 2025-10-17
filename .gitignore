@@ -50,6 +50,8 @@ frontend/yarn.lock
 backend/coverage/
 backend/package-lock.json
 backend/uploads/
+backend/node_modules/
+backend/.env
 
 # ===== Python (if used later) =====
 .mypy_cache/
